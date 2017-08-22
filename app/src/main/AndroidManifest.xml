@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="amztrip.cursoandroid.com.amztrip">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/LoginTheme">
+        // -- Login User --
+        <activity
+            android:name=".LoginUserActivity"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        // -- Login Password --
+        <activity
+            android:name=".LoginPasswordActivity"
+            android:theme="@style/LoginTheme" />
+        // -- Dashboard --
+        <activity
+            android:name=".DashboardActivity"
+            android:theme="@style/DashboardTheme" />
+        // -- Nova viagem --
+        <activity
+            android:name=".ViagemActivity"
+            android:theme="@style/DashboardTheme"/>
+
+        <activity android:name=".GastoActivity"
+            android:theme="@style/DashboardTheme"/>
+        // -- Viagem List Activity --
+
+
+    </application>
+
+</manifest>

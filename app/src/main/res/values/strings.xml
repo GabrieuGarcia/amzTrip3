@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">amzTrip</string>
+
+    <string name="erro_autenticacao_usuario">Usuário inválido!</string>
+    <string name="erro_autenticacao_senha">Senha inválidas!</string>
+
+    <!-- Text Labels Spend -->
+    <string name="spending">Com o que \nvocê gastou?</string>
+    <string name="spend_how_much">Quanto foi?</string>
+    <string name="spend_when">Que dia foi?</string>
+    <string name="spend_hint_date">Selecione a data</string>
+    <string name="spend_description">O que era?</string>
+    <string name="spend_hint_description">Ex: Lanche</string>
+    <string name="spend_local">Em que lugar foi?</string>
+    <string name="spend_hint_local">Ex: Mc Donalds</string>
+
+        <!-- Text Buttons -->
+    <string name="spend_button_add">Adicionar este gasto</string>
+
+    <!-- Spinner Labels -->
+    <string name="categoria">Categoria</string>
+
+    <!-- Spinner Labels -->
+    <string-array name="categoria_gasto">
+        <item>Alimentação</item>
+        <item>Combustível</item>
+        <item>Transporte</item>
+        <item>Hospedagem</item>
+        <item>Outros</item>
+    </string-array>
+
+
+    <!-- Buttons New Trip -->
+    <string name="create_new_trip">Criar nova viagem</string>
+    <string name="Type">Escolha o tipo de gasto</string>
+
+    <!-- Menu -->
+    <string name="logout">Sair</string>
+    <string name="novo_gasto">novo gasto</string>
+    <string name="remover_viagem">remover viagem</string>
+    <string name="remover">remover gasto</string>
+    <string name="sair">sair</string>
+    <string name="editar">editar</string>
+    <string name="gastos_realizados">gastos realizados</string>
+    <string name="opcoes">opcoes</string>
+    <string name="confirmacao_exclusao_viagem">confirmacao_exclusao_viagem</string>
+    <string name="sim">sim</string>
+    <string name="nao">nao</string>
+    <string name="preferencias">preferencias</string>
+    <string name="modo_viagem_sumario">modo_viagem_sumario</string>
+    <string name="modo_viagem">modo_viagem</string>
+    <string name="informe_valor_limite">informe_valor_limite</string>
+    <string name="valor_limite_sumario">valor_limite_sumario</string>
+    <string name="valor_limite">valor_limite</string>
+    <string name="manter_conectado">manter conectado</string>
+    <string name="lazer">lazer</string>
+    <string name="negocios">negocios</string>
+    <string name="registro_salvo">Registro Salvo!</string>
+    <string name="erro_salvar">Erro ao salvar!</string>
+
+
+</resources>

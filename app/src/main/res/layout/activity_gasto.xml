@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="amztrip.cursoandroid.com.amztrip.GastoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_big">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGreenNewTrip" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spending"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_min_default"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_mid"
+            android:text="@string/Type" />
+
+
+        <Spinner
+            android:id="@+id/spinner_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_default"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:background="@color/colorGrayLightDivisor"
+            android:textColor="@color/colorDarkGray"
+            android:layout_marginTop="@dimen/margin_small"
+            android:prompt="@string/categoria"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_minimum"
+            android:layout_marginTop="@dimen/margin_mid"
+            android:background="@color/colorGrayLightDivisor" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_mid"
+        android:text="@string/spend_how_much" />
+
+
+        <EditText
+            android:id="@+id/edt_gasto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_default"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:background="@color/colorGrayLightDivisor"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorDarkGray"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_minimum"
+            android:layout_marginTop="@dimen/margin_mid"
+            android:background="@color/colorGrayLightDivisor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_mid"
+            android:text="@string/spend_when" />
+
+
+        <Button
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_default"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:background="@color/colorGreenNewTrip"
+            android:onClick="selecionarData"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorWhite"
+            android:hint="@string/spend_hint_date"
+            android:textColorHint="@color/colorWhite"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_minimum"
+            android:layout_marginTop="@dimen/margin_mid"
+            android:background="@color/colorGrayLightDivisor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_mid"
+            android:text="@string/spend_description"
+            tools:mockup="@string/spend_hint_description" />
+
+
+        <EditText
+            android:id="@+id/edt_iten_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_default"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:background="@color/colorGrayLightDivisor"
+            android:textColor="@color/colorDarkGray"
+            android:paddingLeft="@dimen/margin_min_default"
+            android:hint="@string/spend_hint_description"
+            android:textColorHint="@color/colorMidGray"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_minimum"
+            android:layout_marginTop="@dimen/margin_mid"
+            android:background="@color/colorGrayLightDivisor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_min_default"
+            android:text="@string/spend_local"
+            tools:mockup="@string/spend_hint_description" />
+
+
+        <EditText
+            android:id="@+id/edt_local"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_default"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:background="@color/colorGrayLightDivisor"
+            android:textColor="@color/colorDarkGray"
+            android:paddingLeft="@dimen/margin_min_default"
+            android:paddingStart="@dimen/margin_min_default"
+            android:hint="@string/spend_hint_local"
+            android:textColorHint="@color/colorMidGray"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/margin_min_default"
+            android:background="@color/colorGrayLightDivisor" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_min_default"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:background="@color/colorGreenNewTrip"
+            android:text="@string/spend_button_add"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
