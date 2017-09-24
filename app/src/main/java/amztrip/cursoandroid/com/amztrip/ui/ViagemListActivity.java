@@ -1,4 +1,4 @@
-package amztrip.cursoandroid.com.amztrip;
+package amztrip.cursoandroid.com.amztrip.ui;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
@@ -21,6 +21,10 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import amztrip.cursoandroid.com.amztrip.util.Constantes;
+import amztrip.cursoandroid.com.amztrip.db.DatabaseHelper;
+import amztrip.cursoandroid.com.amztrip.R;
 
 /**
  * Created by Gabriel on 12/08/17.

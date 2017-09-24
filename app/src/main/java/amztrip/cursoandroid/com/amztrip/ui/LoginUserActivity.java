@@ -1,4 +1,4 @@
-package amztrip.cursoandroid.com.amztrip;
+package amztrip.cursoandroid.com.amztrip.ui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,37 +7,39 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import amztrip.cursoandroid.com.amztrip.R;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 /*
  * Created by Gabriel on 13/03/17.
  */
 
 public class LoginUserActivity extends AppCompatActivity {
 
-    private EditText usuario;
-    private Button botaoEntrar;
+    @BindView(R.id.usuario) EditText usuario;
+    @BindView(R.id.btn_next) Button btnNext;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
 
-        usuario = (EditText)findViewById(R.id.usuario);
-        botaoEntrar = (Button)findViewById(R.id.btn_next);
-        botaoEntrar.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                entrarOnClick();
-            }
-        });
+        ButterKnife.bind(this);
     }
 
+    @OnClick(R.id.btn_next)
+    public void onClick(View view) {
+        entrarOnClick();
+    }
 
     public void entrarOnClick() {
 
         String usuarioInformado = usuario.getText().toString();
+        String userLogin = getResources().getString(R.string.user_login);
 
         // Se user estiver certo vai para a proxima activity - senha
-        if ("gab".equals(usuarioInformado)) {
+        if (userLogin.equals(usuarioInformado)) {
             startActivity(new Intent(this, LoginPasswordActivity.class));
 
         } else {

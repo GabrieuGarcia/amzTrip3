@@ -1,4 +1,4 @@
-package amztrip.cursoandroid.com.amztrip;
+package amztrip.cursoandroid.com.amztrip.util;
 
 /**
  * Created by Gabriel on 21/08/17.

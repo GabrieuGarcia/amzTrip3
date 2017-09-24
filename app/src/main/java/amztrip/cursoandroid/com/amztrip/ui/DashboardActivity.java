@@ -1,4 +1,4 @@
-package amztrip.cursoandroid.com.amztrip;
+package amztrip.cursoandroid.com.amztrip.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+
+import amztrip.cursoandroid.com.amztrip.R;
 
 /**
  * Created by Gabriel on 13/03/17.
@@ -30,17 +32,10 @@ public class DashboardActivity extends AppCompatActivity{
 
         switch (view.getId()) {
 
-            case R.id.nova_viagem:
-                startActivity(new Intent(this, ViagemActivity.class));
+            case R.id.gastos:
+                startActivity(new Intent(this, GastoListActivity.class));
             break;
 
-            case R.id.novo_Custo:
-                startActivity(new Intent(this, GastoActivity.class));
-                break;
-
-            case R.id.configuracoes:
-                startActivity(new Intent(this, ConfiguracoesActivity.class));
-                break;
         }
 
     }

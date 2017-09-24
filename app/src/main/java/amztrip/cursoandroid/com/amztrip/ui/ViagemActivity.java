@@ -1,4 +1,4 @@
-package amztrip.cursoandroid.com.amztrip;
+package amztrip.cursoandroid.com.amztrip.ui;
 
 import android.content.ContentValues;
 import android.content.Intent;
@@ -19,6 +19,10 @@ import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+
+import amztrip.cursoandroid.com.amztrip.util.Constantes;
+import amztrip.cursoandroid.com.amztrip.db.DatabaseHelper;
+import amztrip.cursoandroid.com.amztrip.R;
 
 public class ViagemActivity extends AppCompatActivity {
 

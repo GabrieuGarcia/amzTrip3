@@ -1,8 +1,10 @@
-package amztrip.cursoandroid.com.amztrip;
+package amztrip.cursoandroid.com.amztrip.ui;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.support.annotation.Nullable;
+
+import amztrip.cursoandroid.com.amztrip.R;
 
 /**
  * Created by Gabriel on 21/08/17.

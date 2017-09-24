@@ -14,7 +14,7 @@
     <string name="spend_local">Em que lugar foi?</string>
     <string name="spend_hint_local">Ex: Mc Donalds</string>
 
-        <!-- Text Buttons -->
+    <!-- Text Buttons -->
     <string name="spend_button_add">Adicionar este gasto</string>
 
     <!-- Spinner Labels -->
@@ -57,6 +57,9 @@
     <string name="negocios">negocios</string>
     <string name="registro_salvo">Registro Salvo!</string>
     <string name="erro_salvar">Erro ao salvar!</string>
+
+    <string name="user_login">gab</string>
+    <string name="user_password">123</string>
 
 
 </resources>

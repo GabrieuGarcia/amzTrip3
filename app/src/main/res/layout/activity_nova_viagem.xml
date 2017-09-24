@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGrayLightBackground"
-    tools:context="amztrip.cursoandroid.com.amztrip.ViagemActivity">
+    tools:context="amztrip.cursoandroid.com.amztrip.ui.ViagemActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

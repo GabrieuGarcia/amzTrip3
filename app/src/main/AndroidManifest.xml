@@ -10,7 +10,7 @@
         android:theme="@style/LoginTheme">
         // -- Login User --
         <activity
-            android:name=".LoginUserActivity"
+            android:name=".ui.LoginUserActivity"
             android:theme="@style/LoginTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,22 +20,21 @@
         </activity>
         // -- Login Password --
         <activity
-            android:name=".LoginPasswordActivity"
+            android:name=".ui.LoginPasswordActivity"
             android:theme="@style/LoginTheme" />
         // -- Dashboard --
         <activity
-            android:name=".DashboardActivity"
+            android:name=".ui.DashboardActivity"
             android:theme="@style/DashboardTheme" />
         // -- Nova viagem --
         <activity
-            android:name=".ViagemActivity"
-            android:theme="@style/DashboardTheme"/>
-
-        <activity android:name=".GastoActivity"
-            android:theme="@style/DashboardTheme"/>
+            android:name=".ui.ViagemActivity"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".ui.GastoActivity"
+            android:theme="@style/DashboardTheme" />
         // -- Viagem List Activity --
-
-
+        <activity android:name=".ui.GastoListActivity"></activity>
     </application>
 
 </manifest>
