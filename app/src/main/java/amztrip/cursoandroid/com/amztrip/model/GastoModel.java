@@ -9,15 +9,15 @@ public class GastoModel {
     private String viagem_id = "viagem_id";
     private String categoria = "categoria";
     private String data = "data";
-    private String descricao = "descricao";
+    private String tipo = "tipo";
     private String valor = "valor";
     private String local = "local";
 
-    public GastoModel(String viagem_id, String categoria, String data, String descricao, String valor, String local) {
+    public GastoModel(String viagem_id, String categoria, String data, String tipo, String valor, String local) {
         this.viagem_id = viagem_id;
         this.categoria = categoria;
         this.data = data;
-        this.descricao = descricao;
+        this.tipo = tipo;
         this.valor = valor;
         this.local = local;
     }
@@ -49,12 +49,12 @@ public class GastoModel {
         this.data = data;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getValor() {

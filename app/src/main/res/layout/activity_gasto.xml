@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="amztrip.cursoandroid.com.amztrip.GastoActivity">
+    tools:context="amztrip.cursoandroid.com.amztrip.ui.GastoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorGreenNewTrip" />
+                android:background="@color/colorPrimary" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -66,7 +66,7 @@
 
 
         <EditText
-            android:id="@+id/edt_gasto"
+            android:id="@+id/edt_valor"
             android:layout_width="match_parent"
             android:layout_height="@dimen/size_default"
             android:layout_marginLeft="@dimen/margin_default"
@@ -96,7 +96,7 @@
             android:layout_height="@dimen/size_default"
             android:layout_marginLeft="@dimen/margin_default"
             android:layout_marginRight="@dimen/margin_default"
-            android:background="@color/colorGreenNewTrip"
+            android:background="@color/colorPrimary"
             android:onClick="selecionarData"
             android:inputType="numberDecimal"
             android:textColor="@color/colorWhite"
@@ -120,7 +120,7 @@
 
 
         <EditText
-            android:id="@+id/edt_iten_description"
+            android:id="@+id/edt_tipo"
             android:layout_width="match_parent"
             android:layout_height="@dimen/size_default"
             android:layout_marginLeft="@dimen/margin_default"
@@ -176,7 +176,7 @@
             android:layout_marginLeft="@dimen/margin_default"
             android:layout_marginRight="@dimen/margin_default"
             android:layout_marginTop="@dimen/margin_default"
-            android:background="@color/colorGreenNewTrip"
+            android:background="@color/colorPrimary"
             android:text="@string/spend_button_add"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"/>

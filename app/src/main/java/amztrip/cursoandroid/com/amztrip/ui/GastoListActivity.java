@@ -10,7 +10,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import amztrip.cursoandroid.com.amztrip.R;
-import amztrip.cursoandroid.com.amztrip.dao.BoaViagemDAO;
+import amztrip.cursoandroid.com.amztrip.dao.AmzTripDAO;
 import amztrip.cursoandroid.com.amztrip.model.GastoModel;
 import amztrip.cursoandroid.com.amztrip.ui.adapter.GastoAdapter;
 import butterknife.BindView;
@@ -27,7 +27,7 @@ public class GastoListActivity extends AppCompatActivity {
 
     private GastoAdapter gastoAdapter;
     private ArrayList<GastoModel> gastoList;
-    private BoaViagemDAO dao;
+    private AmzTripDAO dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,7 @@ public class GastoListActivity extends AppCompatActivity {
     }
 
     private void atualizaGastos() {
-        dao = new BoaViagemDAO(this);
+        dao = new AmzTripDAO(this);
         gastoList = new ArrayList<>();
 
         gastoList = dao.listaGastos();

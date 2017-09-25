@@ -14,12 +14,12 @@ import amztrip.cursoandroid.com.amztrip.model.GastoModel;
  * Created by Gabriel on 21/08/17.
  */
 
-public class BoaViagemDAO {
+public class AmzTripDAO {
 
     private DatabaseHelper helper;
     private SQLiteDatabase db;
 
-    public BoaViagemDAO(Context context) {
+    public AmzTripDAO(Context context) {
         helper = new DatabaseHelper(context);
     }
 
@@ -41,6 +41,9 @@ public class BoaViagemDAO {
         db = helper.getWritableDatabase();
 
         contentValues.put("categoria", gastoModel.getCategoria());
+        contentValues.put("valor", gastoModel.getValor());
+        contentValues.put("tipo", gastoModel.getTipo());
+        contentValues.put("local", gastoModel.getLocal());
 
         db.insert(DatabaseHelper.GASTO, null, contentValues);
         db.close();
@@ -50,12 +53,14 @@ public class BoaViagemDAO {
     public ArrayList<GastoModel> listaGastos() {
         ArrayList<GastoModel> result = new ArrayList<>();
         db = helper.getWritableDatabase();
-        Cursor cursor = db.rawQuery("SELECT categoria, valor FROM gasto", null);
+        Cursor cursor = db.rawQuery("SELECT categoria, valor , tipo, local FROM gasto", null);
         if (cursor.moveToFirst()) {
             do {
                 GastoModel gastoModel = new GastoModel();
                 gastoModel.setCategoria(cursor.getString(0));
                 gastoModel.setValor(cursor.getString(1));
+                gastoModel.setTipo(cursor.getString(2));
+                gastoModel.setLocal(cursor.getString(3));
 
                 result.add(gastoModel);
 

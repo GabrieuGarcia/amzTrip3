@@ -43,7 +43,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         db.execSQL("CREATE TABLE " + GASTO + " (_id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 " categoria TEXT, data DATE, valor DOUBLE," +
-                " descricao TEXT, local TEXT, viagem_id INTEGER," +
+                " tipo TEXT, local TEXT, viagem_id INTEGER," +
                 " FOREIGN KEY(viagem_id) REFERENCES viagem(_id));");
     }
 

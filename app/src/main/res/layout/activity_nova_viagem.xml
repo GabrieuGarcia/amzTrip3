@@ -21,7 +21,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorGreenNewTrip" />
+                android:background="@color/colorPrimary" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -121,7 +121,7 @@
                     <!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;android:layout_marginLeft="20dp"&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
                     <!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
                     <!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;android:onClick="selecionarData"&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
-                    <!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;android:background="@color/colorGreenNewTrip"&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+                    <!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;android:background="@color/#01e9ac"&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
                     <!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;android:inputType="date"&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
                     <!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;android:text="Selecionar"&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
                     <!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;android:textColor="@color/colorWhite" />&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
@@ -212,7 +212,7 @@
             android:layout_marginLeft="@dimen/margin_default"
             android:layout_marginRight="@dimen/margin_default"
             android:layout_marginTop="50dp"
-            android:background="@color/colorGreenNewTrip"
+            android:background="@color/colorPrimary"
             android:text="@string/create_new_trip"
             android:textAllCaps="false"
             android:onClick="salvarViagem"

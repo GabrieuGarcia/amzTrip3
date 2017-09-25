@@ -10,13 +10,14 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.Calendar;
 
 import amztrip.cursoandroid.com.amztrip.R;
-import amztrip.cursoandroid.com.amztrip.dao.BoaViagemDAO;
+import amztrip.cursoandroid.com.amztrip.dao.AmzTripDAO;
 import amztrip.cursoandroid.com.amztrip.model.GastoModel;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +29,9 @@ public class GastoActivity extends AppCompatActivity {
     @BindView(R.id.btn_data) Button btnData;
     @BindView(R.id.btn_save) Button btnSave;
     @BindView(R.id.spinner_categoria) Spinner categoria;
+    @BindView(R.id.edt_valor) EditText valor;
+    @BindView(R.id.edt_tipo) EditText tipo;
+    @BindView(R.id.edt_local) EditText lugar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,11 +59,13 @@ public class GastoActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_save)
     public void salvarGasto(View view) {
-        BoaViagemDAO dao = new BoaViagemDAO(this);
+        AmzTripDAO dao = new AmzTripDAO(this);
         GastoModel gasto = new GastoModel();
 
         gasto.setCategoria(categoria.getSelectedItem().toString());
-        gasto.setValor("55,00");
+        gasto.setValor(valor.getText().toString());
+        gasto.setTipo(tipo.getText().toString());
+        gasto.setLocal(lugar.getText().toString());
 
         dao.insertGasto(gasto);
 

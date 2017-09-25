@@ -8,8 +8,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import amztrip.cursoandroid.com.amztrip.R;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Gabriel on 13/03/17.
@@ -17,6 +21,8 @@ import amztrip.cursoandroid.com.amztrip.R;
 
 public class DashboardActivity extends AppCompatActivity{
 
+    @BindView(R.id.gastos)
+    LinearLayout llGastos;
 
 
     @Override
@@ -24,21 +30,17 @@ public class DashboardActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-    }
-
-    public void selecionarOpcao (View view) {
-
-        //com base na view que foi clicada iremos tomar a ação
-
-        switch (view.getId()) {
-
-            case R.id.gastos:
-                startActivity(new Intent(this, GastoListActivity.class));
-            break;
-
-        }
+        ButterKnife.bind(this);
 
     }
+
+
+    @OnClick(R.id.gastos)
+    public void onClickGastos(View view) {
+        startActivity(new Intent(this, GastoListActivity.class));
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

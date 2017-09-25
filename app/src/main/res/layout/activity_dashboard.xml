@@ -1,27 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#273b7a">
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
 
-    <TextView
-        android:id="@+id/gastos"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="49dp"
-        android:layout_marginTop="100dp"
-        android:textAlignment="center"
-        android:text="Veja seus gastos"
-        android:textColor="#ffffff"
-        android:drawableTop="@drawable/novo_custo"
-        android:clickable="true"
-        android:onClick="selecionarOpcao"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="49dp" />
+        android:orientation="vertical"
+        android:layout_weight="30">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_default"
+            android:paddingTop="@dimen/margin_big"
+            android:text="Seja Bem-vindo\nao amzTrip"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_big"
+            android:paddingLeft="@dimen/margin_default"
+            android:paddingRight="150dp"
+            android:textSize="@dimen/text_size_default"
+            android:textColor="@color/colorMidGray"
+            android:text="Com amzTrip você pode controlar os gastos das suas viagens de maneira fácil e organizada."/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/gastos"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:onClick="onclick_gastos"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_small">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ORGANIZAR MEUS GASTOS"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>
